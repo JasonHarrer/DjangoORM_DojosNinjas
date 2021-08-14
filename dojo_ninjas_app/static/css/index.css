@@ -1,0 +1,63 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    margin: 0 15%;    
+}
+
+h1 {
+    text-align: center;
+}
+
+#div-forms-container {
+    display: flex;
+    border-bottom: groove 3px black;
+    gap: 100px;
+    padding-bottom: 20px;
+}
+
+.div-form {
+    flex: 1;
+    padding: 10px 0;
+}
+
+.row {
+    display: flex;
+    margin: 15px 0;
+}
+
+label {
+    flex: 1;
+    text-align: right;
+    padding: 10px;
+}
+
+input, select {
+    border: solid 1px black;
+    border-radius: 5px;
+    box-shadow: 2px 2px darkgray;
+    flex: 3;
+    font-size: 1.2rem;
+    height: 2rem;
+    padding: 2px;
+}
+
+input[type="submit"] {
+    border-radius: 10px;
+    display: block;
+    height: 2.5rem;
+    margin: 20px auto 0;
+    padding: 5px 25px;
+}
+
+#div-allthedojos {
+    margin: 0 30%;
+}
+
+li {
+    margin-left: 3rem; 
+}
