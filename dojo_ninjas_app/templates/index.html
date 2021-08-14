@@ -108,9 +108,18 @@
                 <h1>All The Dojos</h1>
                 {% for dojo in dojos %}
                     <h3>Ninjas at the {{dojo.name}} Dojo - {{dojo.ninjas.all.count}}</h3>
+                    <h4>({{dojo.city}}, {{dojo.state}})
+                        <a href="/delete-a-dojo/{{dojo.id}}">
+                            <button>Delete Dojo</button>
+                        </a>
+                    </h4>
                     <ul>
                         {% for ninja in dojo.ninjas.all %}
-                            <li>{{ninja.first_name}} {{ninja.last_name}}</li>
+                            <li>{{ninja.first_name}} {{ninja.last_name}}
+                                <a href="/delete-a-ninja/{{ninja.id}}">
+                                    <button>Delete Ninja</button>
+                                </a>
+                            </li>
                         {% endfor %}
                     </ul>
                 {% endfor %}
